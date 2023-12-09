@@ -3,11 +3,17 @@ layout: post
 title:  "How to Setup CRUD Webserver Using Java Spark Framework"
 ---
 
-Java Spark Framework is a micro web framework that based on Java language. Unopionated. To be frank with you, Java Spark is not a best choice for those who start learning Java and/or web development in general. The minimalistic library that Java Spark offers can be a huge learning curve.
+Java Spark Framework offers you only the essential tools to build a web application. This unopinionated web framework can be a great choice for those who wanted a flexibility and freedom on building their apps. There is no strict rules or practices that is being enforced. You do you.
+
+To be frank with you, Java Spark has a high learning curve. With the minimalistic framework, you also have to deal with some boilerplate code (example: handling CORS, JSON response handling, dll). Other than that, this library is not a popular choice so that there is a smaller pool of people that is ready to answer your question or give a code snippet on Stackoverflow.
+
+Before you continue reading this guide. I need to mention that I don't recommend this framework if you are someone who starts learning Java or web applications in general. If you are this person then Spring Boot, Django, or CodeIgniter3 can be your option because of their great community support.
+
+Still here? good! I hope we can have a good time while we are learning to build a simple web CRUD application with Java Spark.
 
 ## Setup project gradle
 
-There are two mainstream way to setup Java project: Gradle or Maven. For this guide, we will using Gradle to start an initial project. 
+There are two mainstream way to setup Java project: Gradle or Maven. These are great java build automation tools with their respecticve pros and cons. Personally, I like Gradle's dependency management over Maven because of how it is easy to read. For this guide, we will using Gradle to start our initial project. 
 
 ```
 gradle init --type java-application
